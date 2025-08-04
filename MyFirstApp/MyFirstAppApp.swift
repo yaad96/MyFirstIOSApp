@@ -1,10 +1,3 @@
-//
-//  MyFirstAppApp.swift
-//  MyFirstApp
-//
-//  Created by Mainul Hossain on 8/3/25.
-//
-
 import SwiftUI
 import SwiftData
 
@@ -12,7 +5,7 @@ import SwiftData
 struct MyFirstAppApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            SubjectImage.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -30,3 +23,4 @@ struct MyFirstAppApp: App {
         .modelContainer(sharedModelContainer)
     }
 }
+
